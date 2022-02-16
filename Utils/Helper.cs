@@ -4,13 +4,13 @@ namespace InterfaceExp02.Utils
 {
     public class Helper : IHelper
     {
-        public void filewrite(Textail newtextail)
+        public void filewrite(Textail txt)
         {
 
-            StreamWriter st = new StreamWriter(@"D:\Projects\InterfaceExp02\Static\" + newtextail.item + ".txt");
-            st.WriteLine("Item name :" + newtextail.item);
-            st.WriteLine("Colour of item :" + newtextail.color);
-            st.WriteLine("Number of item :" + newtextail.number.ToString ());
+            StreamWriter st = new StreamWriter(@"D:\Projects\InterfaceExp02\Static\" + txt.item + ".txt");
+            st.WriteLine("Item name :" + txt.item);
+            st.WriteLine("Colour of item :" + txt.color);
+            st.WriteLine("Number of item :" + txt.number.ToString ());
             st.Close();
         }
     }

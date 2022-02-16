@@ -7,18 +7,23 @@ namespace InterfaceExp02.Controllers
     public class TextailController : Controller
     {
 
+        IHelper helper;
 
-        //IHelper helper;
+        public TextailController(IHelper helper)
+        {
+            this.helper = helper;
+
+        }
         public IActionResult Index()
         {
             return View();
         }
 
+        
         public IActionResult AddDetail(Textail newtextail)
         {
-            IHelper obj = new Helper();
-            obj.filewrite(newtextail);
-            //this.helper = helper;
+            helper.filewrite(newtextail);
+            
 
 
 
