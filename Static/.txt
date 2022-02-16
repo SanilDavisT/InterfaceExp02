@@ -1,0 +1,3 @@
+Item name :
+Colour of item :
+Number of item :0
